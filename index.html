@@ -37,6 +37,22 @@
       text-decoration: none;
       font-weight: bold;
     }
+    button, .btn-secondary {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #111;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: #0077ff;
+}
   </style>
 </head>
 <body>
@@ -46,6 +62,10 @@
     <p>Персональный тренер</p>
     <p><a href="tel:+79266143021">+7 926 614 30 21</a></p>
     <button onclick="downloadContact()">Скачать контакт</button>
+    <a class="btn-secondary"
+   href="sms:+79266143021?&body=Здравствуйте!%0A%0AМоё имя:%20%0AМой телефон:%20">
+   Передать свой контакт
+</a>
   </div>
 <script>
 function downloadContact() {
