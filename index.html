@@ -2,12 +2,50 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Fitness Badge</title>
+  <title>Персональная карточка</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    a {
+      color: #0077ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>Персональная карточка</h1>
-  <p>Имя: Давид Колосов</p>
-  <p>Должность: Персональный тренер</p>
-  <p>Телефон: +7 926 614 30 21</p>
+
+  <div class="card">
+    <h1>Давид Колосов</h1>
+    <p>Персональный тренер</p>
+    <p><a href="tel:+79266143021">+7 926 614 30 21</a></p>
+  </div>
+
 </body>
 </html>
